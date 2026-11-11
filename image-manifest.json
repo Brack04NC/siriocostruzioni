@@ -1,0 +1,296 @@
+{
+  "villa": {
+    "w": 1280,
+    "h": 960,
+    "files": [
+      {
+        "file": "villa-piscina-400.webp",
+        "w": 400
+      },
+      {
+        "file": "villa-piscina-760.webp",
+        "w": 760
+      },
+      {
+        "file": "villa-piscina.webp",
+        "w": 1280
+      }
+    ]
+  },
+  "villa2": {
+    "w": 1280,
+    "h": 960,
+    "files": [
+      {
+        "file": "villa-giardino-400.webp",
+        "w": 400
+      },
+      {
+        "file": "villa-giardino-760.webp",
+        "w": 760
+      },
+      {
+        "file": "villa-giardino.webp",
+        "w": 1280
+      }
+    ]
+  },
+  "casale": {
+    "w": 500,
+    "h": 373,
+    "files": [
+      {
+        "file": "casale-pietra-400.webp",
+        "w": 400
+      },
+      {
+        "file": "casale-pietra.webp",
+        "w": 500
+      }
+    ]
+  },
+  "casale2": {
+    "w": 500,
+    "h": 373,
+    "files": [
+      {
+        "file": "casale-prospetto-400.webp",
+        "w": 400
+      },
+      {
+        "file": "casale-prospetto.webp",
+        "w": 500
+      }
+    ]
+  },
+  "casale3": {
+    "w": 500,
+    "h": 373,
+    "files": [
+      {
+        "file": "casale-dettaglio-400.webp",
+        "w": 400
+      },
+      {
+        "file": "casale-dettaglio.webp",
+        "w": 500
+      }
+    ]
+  },
+  "locanda": {
+    "w": 500,
+    "h": 341,
+    "files": [
+      {
+        "file": "locanda-rocco-400.webp",
+        "w": 400
+      },
+      {
+        "file": "locanda-rocco.webp",
+        "w": 500
+      }
+    ]
+  },
+  "locanda2": {
+    "w": 500,
+    "h": 333,
+    "files": [
+      {
+        "file": "locanda-rocco-dettaglio-400.webp",
+        "w": 400
+      },
+      {
+        "file": "locanda-rocco-dettaglio.webp",
+        "w": 500
+      }
+    ]
+  },
+  "grotte": {
+    "w": 425,
+    "h": 283,
+    "files": [
+      {
+        "file": "grotte-osimo.webp",
+        "w": 425
+      }
+    ]
+  },
+  "grotte2": {
+    "w": 283,
+    "h": 445,
+    "files": [
+      {
+        "file": "grotte-osimo-spa.webp",
+        "w": 283
+      }
+    ]
+  },
+  "fabula": {
+    "w": 450,
+    "h": 339,
+    "files": [
+      {
+        "file": "rustico-la-fabula-400.webp",
+        "w": 400
+      },
+      {
+        "file": "rustico-la-fabula.webp",
+        "w": 450
+      }
+    ]
+  },
+  "numana": {
+    "w": 500,
+    "h": 375,
+    "files": [
+      {
+        "file": "palazzina-numana-400.webp",
+        "w": 400
+      },
+      {
+        "file": "palazzina-numana.webp",
+        "w": 500
+      }
+    ]
+  },
+  "varano": {
+    "w": 1500,
+    "h": 996,
+    "files": [
+      {
+        "file": "agriturismo-varano-400.webp",
+        "w": 400
+      },
+      {
+        "file": "agriturismo-varano-760.webp",
+        "w": 760
+      },
+      {
+        "file": "agriturismo-varano.webp",
+        "w": 1500
+      }
+    ]
+  },
+  "varano2": {
+    "w": 500,
+    "h": 224,
+    "files": [
+      {
+        "file": "agriturismo-varano-dettaglio-400.webp",
+        "w": 400
+      },
+      {
+        "file": "agriturismo-varano-dettaglio.webp",
+        "w": 500
+      }
+    ]
+  },
+  "fornace": {
+    "w": 375,
+    "h": 500,
+    "files": [
+      {
+        "file": "vecchia-fornace.webp",
+        "w": 375
+      }
+    ]
+  },
+  "fornace2": {
+    "w": 373,
+    "h": 500,
+    "files": [
+      {
+        "file": "vecchia-fornace-dettaglio.webp",
+        "w": 373
+      }
+    ]
+  },
+  "fornace3": {
+    "w": 500,
+    "h": 375,
+    "files": [
+      {
+        "file": "vecchia-fornace-interno-400.webp",
+        "w": 400
+      },
+      {
+        "file": "vecchia-fornace-interno.webp",
+        "w": 500
+      }
+    ]
+  },
+  "archivio": {
+    "w": 1024,
+    "h": 688,
+    "files": [
+      {
+        "file": "archivio-conero-400.webp",
+        "w": 400
+      },
+      {
+        "file": "archivio-conero-760.webp",
+        "w": 760
+      },
+      {
+        "file": "archivio-conero.webp",
+        "w": 1024
+      }
+    ]
+  },
+  "castelfidardo": {
+    "w": 632,
+    "h": 445,
+    "files": [
+      {
+        "file": "castelfidardo-tavola-400.webp",
+        "w": 400
+      },
+      {
+        "file": "castelfidardo-tavola.webp",
+        "w": 632
+      }
+    ]
+  },
+  "castelfidardo2": {
+    "w": 632,
+    "h": 446,
+    "files": [
+      {
+        "file": "castelfidardo-prospetti-400.webp",
+        "w": 400
+      },
+      {
+        "file": "castelfidardo-prospetti.webp",
+        "w": 632
+      }
+    ]
+  },
+  "castelfidardo3": {
+    "w": 610,
+    "h": 422,
+    "files": [
+      {
+        "file": "castelfidardo-materiale-400.webp",
+        "w": 400
+      },
+      {
+        "file": "castelfidardo-materiale.webp",
+        "w": 610
+      }
+    ]
+  },
+  "logo": {
+    "w": 758,
+    "h": 280,
+    "files": [
+      {
+        "file": "logo-originale-400.webp",
+        "w": 400
+      },
+      {
+        "file": "logo-originale.webp",
+        "w": 758
+      }
+    ]
+  }
+}

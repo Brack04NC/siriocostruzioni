@@ -1,0 +1,74 @@
+{
+  "villa": {
+    "width": 1920,
+    "height": 1440,
+    "files": [
+      {
+        "file": "villa-640.webp",
+        "width": 640
+      },
+      {
+        "file": "villa-1280.webp",
+        "width": 1280
+      },
+      {
+        "file": "villa-1920.webp",
+        "width": 1920
+      }
+    ]
+  },
+  "casale": {
+    "width": 1920,
+    "height": 1432,
+    "files": [
+      {
+        "file": "casale-640.webp",
+        "width": 640
+      },
+      {
+        "file": "casale-1280.webp",
+        "width": 1280
+      },
+      {
+        "file": "casale-1920.webp",
+        "width": 1920
+      }
+    ]
+  },
+  "casale2": {
+    "width": 1920,
+    "height": 1432,
+    "files": [
+      {
+        "file": "casale2-640.webp",
+        "width": 640
+      },
+      {
+        "file": "casale2-1280.webp",
+        "width": 1280
+      },
+      {
+        "file": "casale2-1920.webp",
+        "width": 1920
+      }
+    ]
+  },
+  "varano": {
+    "width": 1920,
+    "height": 1275,
+    "files": [
+      {
+        "file": "varano-640.webp",
+        "width": 640
+      },
+      {
+        "file": "varano-1280.webp",
+        "width": 1280
+      },
+      {
+        "file": "varano-1920.webp",
+        "width": 1920
+      }
+    ]
+  }
+}

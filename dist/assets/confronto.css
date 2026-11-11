@@ -1,0 +1,11 @@
+.proposal-switcher{position:fixed;z-index:90;bottom:18px;right:22px;display:flex;align-items:center;gap:8px;padding:7px 8px 7px 16px;background:#fffdf7;color:#152c41;border:1px solid #d9d5cb;box-shadow:0 4px 24px #061a2c1a;border-radius:50px;font:12px/1.4 "Segoe UI",Arial,sans-serif;isolation:isolate}
+.proposal-switcher a{text-decoration:none;color:inherit;display:flex;align-items:center;justify-content:center;min-height:34px}
+.proposal-switcher .proposal-all{font-weight:700;padding-right:10px;border-right:1px solid #d9d5cb}
+.proposal-switcher nav{display:flex;gap:3px}
+.proposal-switcher nav a{width:35px;border-radius:50%;font-size:12px;font-weight:600}
+.proposal-switcher nav a[aria-current]{background:#142d43;color:#fff}
+.proposal-switcher nav a:hover{background:#ece8df;color:#142d43}
+.proposal-switcher a:focus-visible{outline:3px solid #b36736;outline-offset:2px}
+@media(max-width:650px){.proposal-switcher{right:50%;bottom:12px;transform:translateX(50%);width:max-content;max-width:calc(100% - 24px)}body:has(.proposal-switcher){padding-bottom:76px}body:has(.proposal-switcher) .mobile-contact{bottom:76px}.proposal-switcher nav a{width:32px}}
+@media print{.proposal-switcher{display:none}}
+@media(max-width:370px){.proposal-switcher{gap:5px;padding:6px 6px 6px 11px}.proposal-switcher .proposal-all{font-size:11px;padding-right:8px}.proposal-switcher nav{gap:1px}.proposal-switcher nav a{width:28px;min-height:32px;font-size:11px}}

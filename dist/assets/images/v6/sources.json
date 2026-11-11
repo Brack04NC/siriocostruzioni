@@ -1,0 +1,48 @@
+{
+  "checked_on": "2026-11-11",
+  "source": "CDN del sito Sirio Costruzioni",
+  "processing": "Derivate WebP responsive a 640, 1280 e 1920 px, qualità 90. Nessuna alterazione di facciate, geometrie o materiali.",
+  "limitation": "Le immagini consegnate dal CDN rimangono morbide: pixel maggiori non equivalgono a nuovi dettagli fotografici.",
+  "images": [
+    {
+      "key": "villa",
+      "url": "https://d3e7ilti5q92ri.cloudfront.net/Villa_con_piscina_a_Sirolo_progetto_Arch_Alessandro_Riboldi_2_45a79aac1d.png?width=2000",
+      "format": "JPEG",
+      "size": [
+        1920,
+        1440
+      ],
+      "sha256": "c1aecce19b84cced00f804acf575ee5c95b0bb77182f001cf5e134fe7441f283"
+    },
+    {
+      "key": "casale",
+      "url": "https://d3e7ilti5q92ri.cloudfront.net/Casale_in_pietra_del_Conero_Sirolo_Progetto_arch_Danilo_e_Nicola_Guerri_3_f08a38cbe2.png?width=2000",
+      "format": "JPEG",
+      "size": [
+        1920,
+        1432
+      ],
+      "sha256": "40eb83a4524a8affd7bf6739890621c6a14906e8cd02122479b0999eebf55e36"
+    },
+    {
+      "key": "casale2",
+      "url": "https://d3e7ilti5q92ri.cloudfront.net/Casale_in_pietra_del_Conero_Sirolo_Progetto_arch_Danilo_e_Nicola_Guerri_2_f626d29b9e.png?width=2000",
+      "format": "JPEG",
+      "size": [
+        1920,
+        1432
+      ],
+      "sha256": "37de192aed18654fd58b5606ce9f7d35d530c205a541e85420c35c73c46c6511"
+    },
+    {
+      "key": "varano",
+      "url": "https://d3e7ilti5q92ri.cloudfront.net/Realizzazione_agriturismo_rustico_nel_Conero_Varano_AN_2_945a1f48ab.png?width=2000",
+      "format": "JPEG",
+      "size": [
+        1920,
+        1275
+      ],
+      "sha256": "a81c5c27db779b06aaaedf8037bb5c474e82461a0441724530f02cc6a4f00e29"
+    }
+  ]
+}

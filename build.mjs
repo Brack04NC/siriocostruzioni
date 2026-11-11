@@ -3,6 +3,7 @@ import {mkdirSync, writeFileSync} from "node:fs";
 import {dirname, join} from "node:path";
 import {fileURLToPath} from "node:url";
 import {business, images, projects, services} from "./content.mjs";
+import {buildProposals} from "./proposte.mjs";
 import {absolute, btn, callToAction, escape, eyebrow, frame, icon, imagePath, interest, layout, origin, pageIntro, paragraph, photo, photoGallery, preview, processSection, projectCards, projectRoute, route, sectionHead, serviceRows, textLink} from "./layout.mjs";
 
 const output = fileURLToPath(new URL("./dist/", import.meta.url));
@@ -157,3 +158,5 @@ ${preview ? "  X-Robots-Tag: noindex, nofollow\n" : ""}/assets/*
   Cache-Control: public, max-age=86400
 `);
 console.log(pages.length + " pagine e due percorsi precedenti generati per " + origin);
+
+buildProposals(output);

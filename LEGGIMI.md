@@ -3,6 +3,10 @@
 
 Sito statico multipagina in HTML, CSS e JavaScript. Le pagine, le immagini e gli script sono utilizzabili senza dipendenze di rete. Le azioni telefoniche, l’email e i collegamenti a servizi esterni richiedono le rispettive app o connessioni.
 
+## Proposte alternative della home
+
+Aprire **Proposte.html** per confrontare sei home ai percorsi `/1/index.html`–`/6/index.html`. Dettagli, riferimenti agli ZIP e verifiche in **PROPOSTE.md**. Il comando `node build.mjs` rigenera anche queste pagine.
+
 ## Anteprima locale
 
 Dopo aver estratto tutto lo ZIP, aprire **Apri-Sito.html** con un doppio clic. La copia in **anteprima** usa gli stessi stili, foto e interazioni, con collegamenti adatti all’apertura da disco.

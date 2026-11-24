@@ -19,11 +19,12 @@
       menuButton.setAttribute('aria-expanded', 'false');
       menuButton.setAttribute('aria-label', 'Apri menu');
     };
-    menuButton.addEventListener('click', () => {
+    menuButton.addEventListener('click', event => {
       const open = menuButton.getAttribute('aria-expanded') !== 'true';
       navigation.classList.toggle('is-open', open);
       menuButton.setAttribute('aria-expanded', String(open));
       menuButton.setAttribute('aria-label', open ? 'Chiudi menu' : 'Apri menu');
+      if (open && event.detail === 0) navigation.querySelector('a[href]')?.focus();
     });
     navigation.querySelectorAll('a').forEach(a => a.addEventListener('click', closeMenu));
     document.addEventListener('keydown', event => {
@@ -34,6 +35,9 @@
     });
     document.addEventListener('click', event => {
       if (!event.target.closest('.p-header')) closeMenu();
+    });
+    document.addEventListener('focusin', event => {
+      if (navigation.classList.contains('is-open') && !event.target.closest('.p-header')) closeMenu();
     });
     window.matchMedia('(min-width: 901px)').addEventListener('change', closeMenu);
   }

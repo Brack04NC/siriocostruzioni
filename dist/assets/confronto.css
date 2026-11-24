@@ -9,3 +9,8 @@
 @media(max-width:650px){.proposal-switcher{right:50%;bottom:12px;transform:translateX(50%);width:max-content;max-width:calc(100% - 24px)}body:has(.proposal-switcher){padding-bottom:76px}body:has(.proposal-switcher) .mobile-contact{bottom:76px}.proposal-switcher nav a{width:32px}}
 @media print{.proposal-switcher{display:none}}
 @media(max-width:370px){.proposal-switcher{gap:5px;padding:6px 6px 6px 11px}.proposal-switcher .proposal-all{font-size:11px;padding-right:8px}.proposal-switcher nav{gap:1px}.proposal-switcher nav a{width:28px;min-height:32px;font-size:11px}}
+@media(max-width:36rem){body:has(.proposal-switcher):has(.mobile-contact){padding-bottom:calc(76px + 3.5rem + env(safe-area-inset-bottom))}}
+@media(scripting:none){
+  body:has(.proposal-switcher),body:has(.proposal-switcher):has(.mobile-contact){padding-bottom:0}
+  .proposal-switcher{position:static;margin:1rem auto;width:max-content;transform:none}
+}

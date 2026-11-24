@@ -43,6 +43,9 @@ if (menuButton && navigation) {
   document.addEventListener("click", event => {
     if (navigation.hasAttribute("data-open") && !event.target.closest(".site-header")) closeMenu();
   });
+  document.addEventListener("focusin", event => {
+    if (navigation.hasAttribute("data-open") && !event.target.closest(".site-header")) closeMenu();
+  });
   desktop.addEventListener("change", () => closeMenu());
 }
 
@@ -142,10 +145,22 @@ if (dialog && typeof dialog.showModal === "function") {
 
 const contactForm = document.querySelector("[data-contact-form]");
 if (contactForm) {
+  const draft = contactForm.querySelector("[data-contact-draft]");
+  const openDraft = draft.querySelector("[data-contact-open]");
+  const copyDraft = draft.querySelector("[data-contact-copy]");
+  const status = contactForm.querySelector("[data-form-status]");
+  const email = document.querySelector("[data-direct-email]");
   contactForm.hidden = false;
   const topic = new URLSearchParams(location.search).get("interesse");
   const topicField = contactForm.elements.intervento;
   if (topic && [...topicField.options].some(option => option.value === topic)) topicField.value = topic;
+  contactForm.addEventListener("input", event => {
+    if (draft.contains(event.target) || draft.hidden) return;
+    draft.hidden = true;
+    openDraft.removeAttribute("href");
+    copyDraft.value = "";
+    status.textContent = "";
+  });
   contactForm.addEventListener("submit", event => {
     event.preventDefault();
     const fields = new FormData(contactForm);
@@ -161,8 +176,10 @@ if (contactForm) {
       "Comune: " + get("comune"),
       "Intervento: " + (get("intervento") || "da definire")
     ].join("\r\n");
-    const email = document.querySelector("[data-direct-email]").getAttribute("href");
-    location.href = email + "?subject=" + encodeURIComponent(subject) + "&body=" + encodeURIComponent(body);
-    contactForm.querySelector("[data-form-status]").textContent = "Controlla la bozza nella tua app di posta e inviala quando è pronta.";
+    openDraft.href = email.getAttribute("href") + "?subject=" + encodeURIComponent(subject) + "&body=" + encodeURIComponent(body);
+    copyDraft.value = `A: ${email.textContent.trim()}\nOggetto: ${subject}\n\n${body}`;
+    draft.hidden = false;
+    status.textContent = "La bozza è pronta. Aprila nell’app email oppure copia il testo.";
+    openDraft.focus();
   });
 }

@@ -27,7 +27,7 @@ Aprire [http://127.0.0.1:8765/](http://127.0.0.1:8765/). La cartella **dist** co
 - **dist/assets** contiene CSS, JavaScript, logo e immagini WebP.
 - **image-manifest.json** indica le varianti disponibili e le dimensioni delle immagini.
 
-Dopo aver cambiato testi, metadati o struttura, rigenerare con **node build.mjs**. Il comando usa il dominio aziendale per canonical, dati strutturati e sitemap. Per un’anteprima separata usare **node build.mjs --preview=https://esempio.test**: i metadati useranno quell’indirizzo e le pagine saranno marcate noindex. I file compilati sono inclusi nello ZIP, quindi per visionare o pubblicare l’export non serve Node.
+Dopo aver cambiato testi, metadati o struttura, rigenerare con **node build.mjs**. Il comando usa il dominio aziendale per canonical, dati strutturati e sitemap. Per un’anteprima separata usare **node build.mjs --preview=https://esempio.test**: i metadati useranno quell’indirizzo. Le pagine saranno raggiungibili dai crawler, che potranno leggere la direttiva `noindex`. L’anteprima non contiene la sitemap. Per limitare l’accesso a un’anteprima riservata, attiva l’autenticazione sull’hosting. I file compilati sono inclusi nello ZIP, quindi per visionare o pubblicare l’export non serve Node.
 
 Titoli e descrizioni dei servizi sono in **content.mjs**. Le pagine collegano i servizi ai lavori pertinenti, mentre la sitemap comprende le immagini dei progetti. I dati strutturati collegano l’impresa, il sito e la pagina corrente. CSS e JavaScript hanno un identificatore calcolato dal contenuto per aggiornare la cache quando cambiano.
 

@@ -249,6 +249,8 @@ h1 + .lede, h2 + .lede { margin-top: 1.3rem; }
 .contact-form .actions { margin-top: .2rem; }
 .contact-form .fine-print { font-size: .83rem; color: var(--muted); }
 .contact-form .fine-print a { color: var(--blue); }
+[data-contact-draft] details { margin-top: 1rem; }
+[data-contact-draft] .form-field { margin-top: .65rem; }
 .form-status { min-height: 1.5rem; font-size: .88rem; color: var(--blue); }
 details { border-bottom: 1px solid var(--line); }
 summary { padding: .9rem 0; cursor: pointer; font-weight: 700; }
@@ -270,7 +272,14 @@ details p { padding-bottom: 1rem; }
 @media (max-width: 51.99rem) {
   .enhanced .menu-trigger { display: inline-flex; }
   .enhanced .navigation { display: none; }
-  .enhanced .navigation[data-open] { display: grid; }
+  .enhanced .navigation[data-open] {
+    display: grid;
+    max-height: calc(100vh - 100%);
+    max-height: calc(100dvh - 100%);
+    overflow-y: auto;
+    overscroll-behavior: contain;
+  }
+  .site-header:has(.navigation[data-open]) { z-index: 91; }
   .head-row { flex-wrap: wrap; column-gap: .45rem; }
   .navigation { flex: 0 0 100%; padding: .35rem 0 .75rem; gap: .3rem .65rem; flex-wrap: wrap; }
   .enhanced .navigation { position: absolute; top: 100%; left: 0; right: 0; padding: .65rem var(--space) 1.1rem; background: var(--paper); border-bottom: 1px solid var(--line); box-shadow: 0 12px 22px #112d471c; }
@@ -284,6 +293,10 @@ details p { padding-bottom: 1rem; }
   .mobile-contact a:last-child { color: var(--navy); background: var(--white); border-color: var(--white); }
   .mobile-contact svg { width: .95rem; height: .95rem; flex: none; }
   .hero-copy .actions { gap: .45rem .8rem; }
+}
+@media (max-width: 36rem) and (scripting: none) {
+  body { padding-bottom: 0; }
+  .mobile-contact { position: static; }
 }
 @media (min-width: 37rem) {
   .section-head { grid-template-columns: minmax(0,1fr) auto; align-items: end; }
@@ -307,7 +320,7 @@ details p { padding-bottom: 1rem; }
   .fact { padding-left: 1.1rem; }
 }
 @media (prefers-reduced-motion: reduce) {
-  *, *::before, *::after { animation-duration: .01ms !important; transition-duration: .01ms !important; scroll-behavior: auto !important; }
+  *, *::before, *::after { animation-duration: .01ms !important; animation-delay: 0s !important; transition-duration: .01ms !important; scroll-behavior: auto !important; }
   .project-card > a { transform: translateY(var(--project-lift, 0)); transition: none; }
   .project-card > a:hover img, .project-card > a:hover .project-icon { transform: none; }
 }

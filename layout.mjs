@@ -185,6 +185,7 @@ export function layout({path, title, description, body, active, crumbs = [], ima
   <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="/assets/site.css?v=${stylesheetVersion}">
   <script src="/assets/site.js?v=${scriptVersion}" defer></script>
+<script src="/assets/focus.js" defer></script>
   ${data.map(jsonScript).join("\n  ")}
 </head>
 <body>
